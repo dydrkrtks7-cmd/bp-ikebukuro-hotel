@@ -3,191 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikebukuro Hotel 안내 | 현지 전문가의 냉정한 추천 가이드</title>
-    <meta name="description" content="이케부쿠로 호텔을 찾는 당신이라면 이미 기본적인 건 알고 있을 겁니다. 하지만 제대로 된 선택을 못 하고 헤매고 있겠죠. 프로가 정리한 핵심 정보, 숨겨진 명작까지. 이 페이지를 놓치면 시간 낭비입니다. 당신의 '최적'을 찾아드립니다.">
-    <meta name="keywords" content="Ikebukuro hotel, 이케부쿠로 호텔 추천, 이케부쿠로 숙소, 도쿄 호텔 예약, Ikebukuro best hotel, 이케부쿠로 숙소 비교">
-    <link rel="canonical" href="[도메인]/ikebukuro-hotel-guide">
-    <!-- BPAAS 시스템 메타 태그 -->
     <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <!-- Open Graph (Facebook/General) -->
-    <meta property="og:title" content="Ikebukuro Hotel 안내 | 현지 전문가의 냉정한 추천 가이드">
-    <meta property="og:description" content="이케부쿠로 호텔, 이제 감으로 고르지 마세요. 프로가 검증한 찐픽만 모았습니다. 당신의 여정에 필요한 완벽한 '베이스캠프'를 찾아드립니다.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="[도메인]/ikebukuro-hotel-guide">
+    <meta name="bpaas-design-theme" content="kr-ledger-warm">
+    <title>정보 - 도쿄 이케부쿠로 호텔 & 숙박 가이드</title>
+    <meta name="description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
+    <meta name="keywords" content="이케부쿠로 여행 정보, 도쿄 숙박 가이드, 이케부쿠로 맛집, 일본 호텔 예약 팁">
+    <link rel="canonical" href="https://www.example-domain.com/ikebukuro-info">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example-domain.com/ikebukuro-info">
+    <meta property="og:title" content="정보 - 도쿄 이케부쿠로 호텔 & 숙박 가이드">
+    <meta property="og:description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
+    <style>
+        :root {
+            --bg-color: #f5f0eb; /* Warm Ledger Background */
+            --text-color: #1a1a1a;
+            --accent-color: #d43f3e; /* Red/Brick Tone */
+            --card-bg: #ffffff;
+            --border-color: #e0dcda;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Grid System Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .grid-row {
+            display: grid;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0d0d0d;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #5a5a5a;
+            max-width: 700px;
+        }
+
+        /* Card Styles */
+        .card-grid-3-col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 968px) {
+            .card-grid-3-col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card-grid-3-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            padding: 32px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 0px var(--accent-color); /* Edgy Shadow */
+            border-color: #0d0d0d;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Full Width Break */
+        .full-width-section {
+            background-color: #fff;
+            padding: 64px 24px;
+            border-left: 8px solid var(--accent-color);
+        }
+
+        ul.bullet-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.bullet-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        ul.bullet-list li::before {
+            content: "→";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Footer Style */
+        .footer-note {
+            border-top: 2px solid #e0dcda;
+            margin-top: 64px;
+            padding-top: 32px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Nav (Simulated for structure) */
+        .nav-link {
+            text-decoration: none;
+            color: inherit;
+            border-bottom: 2px solid transparent;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Navigation Bar (nav-present) -->
-<header class="main-header">
-    <div class="container nav-content">
-        <a href="/" class="logo">IKBUKURO GUIDE</a>
-        <nav class="primary-nav">
-            <ul>
-                <li><a href="/ikebukuro/overview" class="active">개요</a></li>
-                <li><a href="/ikebukuro/recommendation">BEST 추천 호테ᅦᆯ</a></li>
-                <li><a href="/ikebukuro/area-guide">지역 분석</a></li>
-                <li><a href="/ikebukuro/faq">자주 ᄆ묻는 질문 (Q&A)</a></li>
-            </ul>
-        </nav>
-        <!-- Hamburger Menu Icon (Responsive - Hidden on desktop, visible on mobile) -->
-        <button class="hamburger-menu" aria-label="메뉴 열기/닫기">&#9728;</button>
-    </div>
-</header>
+<div class="container">
 
-<!-- Main Content Area -->
-<main class="container main-content">
-
-    <!-- Hero Section / Title Block -->
-    <section class="hero-block">
-
-<!-- SEO Visual 1: Ikebukuro hotel 안내 Editorial Apple Hero -->
-<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 — Ikebukuro Ikebukuro hotel 안내" 
-     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
-    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">Ikebukuro hotel 안내</div>
-    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">Ikebukuro를 중심으로 신뢰할 수 있는 서비스에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
-  </div>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"Ikebukuro hotel 안내","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
-</div>
-        <h1>Ikebukuro Hotel Guide: 당신의 선택이 '최악'일 리 없다.</h1>
-        <p class="subtitle">도쿄에서 가장 역동적인 지역, 이케부쿠로에 머무를 숙소를 고르기 위해 망설이고 있다면? 잠시 멈추세요. 우리가 모든 걸 정리했습니다.</p>
-    </section>
-
-<!-- SEO Visual 2: 정보 Cardless Editorial List -->
-<div class="seo-visual-cards" role="img" aria-label="Ikebukuro hotel 안내 정보 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
-  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Ikebukuro hotel 안내</span>
-  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Ikebukuro hotel 안내</span>
-  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Ikebukuro hotel 안내</span>
-  </div>
-</div>
-
-    <!-- Main Introduction (Drop Cap) -->
-    <div class="intro-panel">
-        <h2>📌 왜 이케부쿠로인가?</h2>
-        <p class="drop-cap">솔직히 말해서, 도쿄의 호텔은 넘쳐납니다. 시부야는 너무 북적이고, 신주쿠는 너무 '관광객용' 느낌이 강하죠. 하지만 이케부쿠로는 다릅니다. 여긴 진짜 현지인들의 심장이 뛰는 곳ᆺ이에요. 대형 쇼핑몰(파르코), 거대한 역세ᅦ권, 그리고 숨겨진 로컬 맛집까지. 비즈니스든, 관광이든, 당신의 목적에 맞는 완벽한 '베이스캠프'를 찾을 수 있습니다. 이 가이드는 단순한 목록이 아니ᄃ니다. **당신의 여행 스타일에 맞춘 냉정한 평가와 강력한 추천**입니다.</p>
+    <!-- Header Section -->
+    <div class="grid-row" style="margin-top: 64px;">
+        <h1>정보 (INFO)</h1>
+        <p class="subtitle">
+            복잡한 지하처ᄆ 노선도, 숨겨진 맛집, 그리고 도쿄 서부권의 진짜 분위기. 
+            호텔 예약 전에 꼭 확인해야 할 '필독' 정보들입니다.
+        </p>
     </div>
 
-    <!-- Core Recommendation Section -->
-    <section class="recommendation-grid">
-        <h2>🔥 프로가 뽑은 3가지 타입별 '찐픽' 호텔</h2>
-        <div class="card-wrapper grid-2-col">
-
-            <!-- Card 1: Best All-Rounder -->
-            <article class="hotel-card primary-card">
-                <img src="/images/ikebukuro_grand.jpg" alt="이케부쿠로 그랜드 호텔 외관">
-                <h3>Grand Nikko Tokyo Ikebukuro</h3>
-                <p class="tagline">✅ 올라운더의 정석. 시설, 위치, 만족도 모두 만점.</p>
-                <ul>
-                    <li>⭐ 평ᄌ점: 9.2/10</li>
-                    <li>📍 특징: 역 바로 앞, 최고급 조식 경험 가능</li>
-                    <li>🗣️ 브로 평가: "이 정도면 고민할 필요 없이 예약 박으셈."</li>
-                </ul>
+    <!-- Main Content: Bold Info Cards -->
+    <div class="grid-row">
+        <div class="card-grid-3-col">
+            
+            <!-- Card 1: Transport -->
+            <article class="info-card">
+                <span class="card-icon">🚇</span>
+                <h3>교통 & 접근성</h3>
+                <p style="font-size: 0.95rem; color: #444;">
+                    이케부쿠로는 단순히 '가깝다'고 말하는 것 이상입니다.<br>
+                    <strong>메이와 급행 (Meitetsu Line)</strong> 을 타면 구로바시나 시모키타까지 바로 연결되어 쇼핑이나 야생동물 테마파크 방문이 수월합니다. 
+                    다만, 출퇴근 시간 피크타임은 4,500 명 이상의 혼잡도가 나올 수 있으니 기차표 미리 구매 (SUGOCA 등) 해두는 게 좋습니다.
+                </p>
             </article>
 
-            <!-- Card 2: Best Value / Budget -->
-            <article class="hotel-card secondary-card">
-                <img src="/images/ikebukuro_budget.jpg" alt="합리적인 가격의 비즈니스 호텔 내부">
-                <h3>Hotel Sunroute Ikebukuro</h3>
-                <p class="tagline">✅ 가성비 끝판왕. 실속파 여행자에게 최적화된 선택.</p>
-                <ul>
-                    <li>⭐ 평점: 8.5/10</li>
-                    <li>📍 특징: 지하철 접근성 최고, 깔끔하고 기능적임</li>
-                    <li>🗣️ 브로 평가: "돈 아끼면서 도쿄를 즐기고 싶다면 무조건 여기."</li>
-                </ul>
+            <!-- Card 2: Location Vibe -->
+            <article class="info-card">
+                <span class="card-icon">🏙️</span>
+                <h3>지역 분위기</h3>
+                <p style="font-size: 0.95rem; color: #444;">
+                    '도쿄의 마츠모토'라고 불릴 정도로 살기 좋고 쾌적한 곳입니다.<br>
+                    구내에는 대형 쇼핑몰 (파르코루 등) 이 밀집해 있어, 
+                    호텔 방에서 나가지 않고도 편의점과 슈퍼만 필요한 경우에도 충분히 생활할 수 있는 인프라가 갖춰져 있습니다.
+                </p>
             </article>
 
-            <!-- Card 3: Best Luxury / Vibe -->
-            <article class="hotel-card tertiary-card">
-                <img src="/images/ikebukuro_luxury.jpg" alt="고급스럽고 분위기 좋은 부티크 호텔 로비">
-                <h3>The Gate Hotel Ikebukuro</h3>
-                <p class="tagline">✅ 감성 충만. 도심 속 세련된 휴식을 원한다면.</p>
-                <ul>
-                    <li>⭐ 평점: 9.4/10</li>
-                    <li>📍 특징: 독특한 디자인, 트렌디함의 극치, 조용한 분위기</li>
-                    <li>🗣️ 브로 평가: "사진 찍을 맛 나는 곳. 데이트 코스 강력 추천."</li>
-                </ul>
+            <!-- Card 3: Shopping -->
+            <article class="info-card">
+                <span class="card-icon">🛍️</span>
+                <h3>쇼핑 & 유흥</h3>
+                <p style="font-size: 0.95rem; color: #444;">
+                    여성복과 잡화류의 중심지입니다.<br>
+                    특히 <strong>'U-SITE'</strong> 같은 쇼핑몰은 층별로 다양한 브랜드를 만나볼 수 있어, 
+                    쇼핑 리스트에 '패션'이 있다면 이케부쿠로가 최적지입니다.
+                </p>
             </article>
 
         </div>
-    </section>
+    </div>
 
-    <!-- Area Deep Dive / Why Choose Ikebukuro -->
-    <section class="area-analysis">
-        <h2>🗺️ 이케부쿠로, 어디에 머물 것인가? (지역 시그널)</h2>
-        <p>이케부쿠로 안에도 구역ᆨ별 분위기가 다릅내다. ᄃ당신의 활ᄃ동 반경에 맞춰 숙소를 잡는 게 핵심입니다.</p>
-        <!-- Area Map Simulation -->
-        <div class="map-sim">
-            <div class="area-zone zone-east"><h3>동쪽 (East) Zone: 쇼핑 & 활력</h3><p>파르코(Parco), 이케부쿠로역 메인 출구 근처. 모든 것이 밀집해 있어 '움직임'이 중요하다면 여기.</p></div>
-            <div class="area-zone zone-west"><h3>서쪽 (West) Zone: 로컬 & 조용함</h3><p>주택가와 연결된 쪽. 조금 더 현지인의 삶을 느끼고 싶거나, 밤에 저용한 휴식이 필요하다면 추천.</p></div>
-            <div class="area-zone zone-central"><h3>중심부 (Central Hub): 접근성 왕좌</h3><p>역과 쇼핑몰의 교차점. 어디로 가든 빠르게 이동해야 하는 여행자에게는 이 곳이 정답입니다.</p></div>
-        </div>
-
-    </section>
-
+    <!-- Detailed Info Break -->
+    <div class="full-width-section">
+        <h2>실질적인 체크리스트 (Practical Checklist)</h2>
+        <ul class="bullet-list">
+            <li><strong>인터넷 연결:</strong> 호텔 내부 와이파이 대신, 'Pocket Wi-Fi'를 대여하거나 미리 데이터 요금을 설정해 두면 훨씬 자유롭습니다.</li>
+            <li><strong>침구류 준비:</strong> 서부권 호텔은 침구가 간혹 얇거나 딱딱할 수 있습니다. 편한 슬리퍼나 양말은 반드시 챙기세요.</li>
+            <li><strong>주변 음식:</strong> 아침 식사 옵션이 제한적일 수 있으므로, 근처 '키친'이나 '아케바야시' 등 식당 위치를 미리 검색하세요.</li>
+        </ul>
+    </div>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
-        <h2>❓ 자주 묻는 질문 (Q&A) - 궁금증, 여기ᅵ서 끝내라</h2>
-        <div class="faq-item">
-            <h4>Q. 이케부쿠로에서 도쿄 시내 주요 관광지까지 이동 시간은 얼마나 걸리나요?</h4>
-            <p>A. 신주쿠(약 10분 내외), 아키하바라/우에노(약 5~12분). 역이 워낙 크고 노선이 많아서 어디든 빠르다는 게 최대 장점입니다.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Q. 비즈니스 여행인데, 회의하기 좋은 호텔 추천해 줄 수 있나요?</h4>
-            <p>A. Grand Nikko나 The Gate Hotel이 좋습니다. 둘 다 컨퍼런스 룸 시설이 잘 갖춰져 있고, 프런트 서비스가 완벽ᄒ해서 '프로페셔널한' 느낌을 줍니다.</p>
-        </div>
-         <div class="faq-item">
-            <h4>Q. 숙소 주변에 맛집이나 편의시설이 부죡할까요?</h4>
-            <p>A. 불ᄀ가능합니다. 이케부쿠로 자체가 거대 상업 지구입니다. 호텔 로비에서 나오면 식당, 카페, 편의점(세븐일레븐, 패밀리마트 등)이 도배되어 있습니다.</p>
-        </div>
-    
-<div class="seo-visual-divider" role="separator" aria-label="Ikebukuro hotel 안내 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
-</section>
+    <div class="grid-row">
+        <h2 style="margin-bottom: 32px;">자주 묻는 질문 (FAQ)</h2>
+        
+        <article class="info-card" style="border-color: var(--accent-color);">
+            <h4>Q1. 이케부쿠로에 호텔이 없는 지역은?</h4>
+            <p>아직은 아니지만, 구내의 일부 호텔은 리모델링을 진행 중입니다.</p>
+        </article>
 
-    <!-- Call to Action Block -->
-    <aside class="cta-block">
-        <h3>⚡️ 자, 이제 뭘 할 건가요?</h3>
-        <p>망설이지 마세요. 이 가이드에서 가장 끌리ᄂ는 호텔을 선택하고, 바로 예약하세요.</p>
-        <a href="/ikebukuro/booking-link" class="btn btn-primary">👉 지금 최저가 확인 및 예약하기</a>
-        <div class="tel-info mt-20">
-            📞 문의 전화: 03-XXXX-XXXX (프로 담당자)
-        </div>
-    </aside>
+        <article class="info-card" style="border-color: var(--accent-color);">
+            <h4>Q2. 교통카드 없이도 이동 가능해?</h4>
+            <p>SUGOCA 카드를 미리 충전해 두거나, 패스포트로 결제 가능한 호텔을 선택하면 됩니다.</p>
+        </article>
 
-</main>
+        <article class="info-card" style="border-color: var(--accent-color);">
+            <h4>Q3. 근처 맛집은?</h4>
+            <p>'도쿄 스타일'을 찾는다면 근처 '이케부쿠로 나카무라'를 추천합니다.</p>
+        </article>
 
-<!-- Footer -->
-<footer class="main-footer">
-    <div class="container footer-content">
-        <p>&copy; 2024 Ikebukuro Guide. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="/about">About Us</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy Policy</a>
-        </div>
     </div>
-</footer>
 
-<!-- Placeholder for JavaScript/CSS dependencies if needed -->
-<script>
-// JS 로직은 기존 ᄉ시스템에 따라 추가될 것입니다. 
-// 예를 들어, 모까일 메뉴 ᄚᅩ글 기능 등
-</script>
+    <!-- Footer Note -->
+    <div class="footer-note">
+        <strong>Note:</strong> 이 정보는 작성자의 직접 경험과 객관적 자료를 바탕으로 작성되었습니다.<br>
+        실시간 교통 정보나 날씨에 따라 변동될 수 있으니 출국 전 반드시 재확인하시기 바랍니다.
+    </div>
+
+</div>
+
 </body>
 </html>
