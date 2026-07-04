@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ikebukuro-hotel.node-link.shop/sitemap.xml
+Sitemap: https://ikebukuro-stay-guide.node-link.shop/sitemap.xml
