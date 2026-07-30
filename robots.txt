@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hongdae-fullsalon-note.mapo-shirts-insider.xyz/sitemap.xml
-Sitemap: https://hongdae-fullsalon-note.mapo-shirts-insider.xyz/sitemap-pages.xml
+Sitemap: https://ikebukuro-stay-guide.node-link.shop/sitemap.xml
+Sitemap: https://ikebukuro-stay-guide.node-link.shop/sitemap-pages.xml
