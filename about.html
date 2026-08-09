@@ -1,248 +1,246 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-ledger-warm">
-    <title>정보 - 도쿄 이케부쿠로 호텔 & 숙박 가이드</title>
-    <meta name="description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
-    <meta name="keywords" content="이케부쿠로 여행 정보, 도쿄 숙박 가이드, 이케부쿠로 맛집, 일본 호텔 예약 팁">
-    <link rel="canonical" href="https://ikebukuro-stay-guide.node-link.shop/about.html">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ikebukuro-stay-guide.node-link.shop/about.html">
-    <meta property="og:title" content="정보 - 도쿄 이케부쿠로 호텔 &amp; 숙박 가이드">
-    <meta property="og:description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
-    <style>
-        :root {
-            --bg-color: #f5f0eb; /* Warm Ledger Background */
-            --text-color: #1a1a1a;
-            --accent-color: #d43f3e; /* Red/Brick Tone */
-            --card-bg: #ffffff;
-            --border-color: #e0dcda;
-        }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>정보 - 도쿄 이케부쿠로 호텔 & 숙박 가이드</title>
+ <meta name="description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
+ <meta name="keywords" content="이케부쿠로 여행 정보, 도쿄 숙박 가이드, 이케부쿠로 맛집, 일본 호텔 예약 팁">
+ <link rel="canonical" href="https://ikebukuro-stay-guide.node-link.shop/about.html">
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://ikebukuro-stay-guide.node-link.shop/about.html">
+ <meta property="og:title" content="정보 - 도쿄 이케부쿠로 호텔 &amp; 숙박 가이드">
+ <meta property="og:description" content="도쿄 서부권, 이케부쿠로의 숨겨진 진실. 지하철 역 구조부터 근처 맛집까지, 현지인이 알려주는 실질적인 정보만 모았습니다.">
+ <style>
+ :root {
+ --bg-color: #f5f0eb; /* Warm Ledger Background */
+ --text-color: #1a1a1a;
+ --accent-color: #d43f3e; /* Red/Brick Tone */
+ --card-bg: #ffffff;
+ --border-color: #e0dcda;
+ }
 
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
+ body {
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ line-height: 1.6;
+ margin: 0;
+ padding: 0;
+ }
 
-        /* Grid System Container */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+ /* Grid System Container */
+ .container {
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
 
-        .grid-row {
-            display: grid;
-            gap: 24px;
-            margin-bottom: 32px;
-        }
+ .grid-row {
+ display: grid;
+ gap: 24px;
+ margin-bottom: 32px;
+ }
 
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            color: #0d0d0d;
-        }
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 800;
+ letter-spacing: -0.02em;
+ color: #0d0d0d;
+ }
 
-        h1 {
-            font-size: clamp(2rem, 5vw, 4rem);
-            margin-bottom: 16px;
-            line-height: 1.1;
-        }
+ h1 {
+ font-size: clamp(2rem, 5vw, 4rem);
+ margin-bottom: 16px;
+ line-height: 1.1;
+ }
 
-        .subtitle {
-            font-size: 1.25rem;
-            color: #5a5a5a;
-            max-width: 700px;
-        }
+ .subtitle {
+ font-size: 1.25rem;
+ color: #5a5a5a;
+ max-width: 700px;
+ }
 
-        /* Card Styles */
-        .card-grid-3-col {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
+ /* Card Styles */
+ .card-grid-3-col {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 24px;
+ }
 
-        @media (max-width: 968px) {
-            .card-grid-3-col {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+ @media (max-width: 968px) {
+ .card-grid-3-col {
+ grid-template-columns: repeat(2, 1fr);
+ }
+ }
 
-        @media (max-width: 768px) {
-            .card-grid-3-col {
-                grid-template-columns: 1fr;
-            }
-        }
+ @media (max-width: 768px) {
+ .card-grid-3-col {
+ grid-template-columns: 1fr;
+ }
+ }
 
-        .info-card {
-            background: var(--card-bg);
-            border: 2px solid var(--border-color);
-            padding: 32px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
+ .info-card {
+ background: var(--card-bg);
+ border: 2px solid var(--border-color);
+ padding: 32px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ position: relative;
+ }
 
-        .info-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 8px 8px 0px var(--accent-color); /* Edgy Shadow */
-            border-color: #0d0d0d;
-        }
+ .info-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 8px 8px 0px var(--accent-color); /* Edgy Shadow */
+ border-color: #0d0d0d;
+ }
 
-        .card-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            display: block;
-        }
+ .card-icon {
+ font-size: 2rem;
+ margin-bottom: 16px;
+ display: block;
+ }
 
-        .info-card h3 {
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
+ .info-card h3 {
+ margin-top: 0;
+ font-size: 1.5rem;
+ }
 
-        /* Full Width Break */
-        .full-width-section {
-            background-color: #fff;
-            padding: 64px 24px;
-            border-left: 8px solid var(--accent-color);
-        }
+ /* Full Width Break */
+ .full-width-section {
+ background-color: #fff;
+ padding: 64px 24px;
+ border-left: 8px solid var(--accent-color);
+ }
 
-        ul.bullet-list {
-            list-style-type: none;
-            padding: 0;
-        }
+ ul.bullet-list {
+ list-style-type: none;
+ padding: 0;
+ }
 
-        ul.bullet-list li {
-            position: relative;
-            padding-left: 24px;
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-        }
+ ul.bullet-list li {
+ position: relative;
+ padding-left: 24px;
+ margin-bottom: 16px;
+ font-size: 1.1rem;
+ }
 
-        ul.bullet-list li::before {
-            content: "→";
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
+ ul.bullet-list li::before {
+ content: "→";
+ color: var(--accent-color);
+ position: absolute;
+ left: 0;
+ font-weight: bold;
+ }
 
-        /* Footer Style */
-        .footer-note {
-            border-top: 2px solid #e0dcda;
-            margin-top: 64px;
-            padding-top: 32px;
-            font-size: 0.9rem;
-            color: #777;
-        }
+ /* Footer Style */
+ .footer-note {
+ border-top: 2px solid #e0dcda;
+ margin-top: 64px;
+ padding-top: 32px;
+ font-size: 0.9rem;
+ color: #777;
+ }
 
-        /* Nav (Simulated for structure) */
-        .nav-link {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 2px solid transparent;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ /* Nav (Simulated for structure) */
+ .nav-link {
+ text-decoration: none;
+ color: inherit;
+ border-bottom: 2px solid transparent;
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
 <div class="container">
 
-    <!-- Header Section -->
-    <div class="grid-row" style="margin-top: 64px;">
-        <h1>정보 (INFO)</h1>
-        <p class="subtitle">
-            복잡한 지하철 노선도, 숨겨진 맛집, 그리고 도쿄 서부권의 진짜 분위기. 
-            호텔 예약 전에 꼭 확인해야 할 '필독' 정보들입니다.
-        </p>
-    </div>
+ <!-- Header Section -->
+ <div class="grid-row" style="margin-top: 64px;">
+ <h1>정보 (INFO)</h1>
+ <p class="subtitle">
+ 복잡한 지하철 노선도, 숨겨진 맛집, 그리고 도쿄 서부권의 진짜 분위기. 
+ 호텔 예약 전에 꼭 확인해야 할 '필독' 정보들입니다.
+ </p>
+ </div>
 
-    <!-- Main Content: Bold Info Cards -->
-    <div class="grid-row">
-        <div class="card-grid-3-col">
-            
-            <!-- Card 1: Transport -->
-            <article class="info-card">
-                <span class="card-icon">🚇</span>
-                <h3>교통 & 접근성</h3>
-                <p style="font-size: 0.95rem; color: #444;">
-                    이케부쿠로는 단순히 '가깝다'고 말하는 것 이상입니다.<br>
-                    <strong>메이와 급행 (Meitetsu Line)</strong> 을 타면 구로바시나 시모키타까지 바로 연결되어 쇼핑이나 야생동물 테마파크 방문이 수월합니다. 
-                    다만, 출퇴근 시간 피크타임은 4,500 명 이상의 혼잡도가 나올 수 있으니 기차표 미리 구매 (SUGOCA 등) 해두는 게 좋습니다.
-                </p>
-            </article>
+ <!-- Main Content: Bold Info Cards -->
+ <div class="grid-row">
+ <div class="card-grid-3-col">
+ 
+ <!-- Card 1: Transport -->
+ <article class="info-card">
+ <span class="card-icon">🚇</span>
+ <h3>교통 & 접근성</h3>
+ <p style="font-size: 0.95rem; color: #444;">
+ 이케부쿠로는 단순히 '가깝다'고 말하는 것 이상입니다.<br>
+ <strong>메이와 급행 (Meitetsu Line)</strong> 을 타면 구로바시나 시모키타까지 바로 연결되어 쇼핑이나 야생동물 테마파크 방문이 수월합니다. 
+ 다만, 출퇴근 시간 피크타임은 4,500 명 이상의 혼잡도가 나올 수 있으니 기차표 미리 구매 (SUGOCA 등) 해두는 게 좋습니다.
+ </p>
+ </article>
 
-            <!-- Card 2: Location Vibe -->
-            <article class="info-card">
-                <span class="card-icon">🏙️</span>
-                <h3>지역 분위기</h3>
-                <p style="font-size: 0.95rem; color: #444;">
-                    '도쿄의 마츠모토'라고 불릴 정도로 살기 좋고 쾌적한 곳입니다.<br>
-                    구내에는 대형 쇼핑몰 (파르코루 등) 이 밀집해 있어, 
-                    호텔 방에서 나가지 않고도 편의점과 슈퍼만 필요한 경우에도 충분히 생활할 수 있는 인프라가 갖춰져 있습니다.
-                </p>
-            </article>
+ <!-- Card 2: Location Vibe -->
+ <article class="info-card">
+ <span class="card-icon">🏙️</span>
+ <h3>지역 분위기</h3>
+ <p style="font-size: 0.95rem; color: #444;">
+ '도쿄의 마츠모토'라고 불릴 정도로 살기 좋고 쾌적한 곳입니다.<br>
+ 구내에는 대형 쇼핑몰 (파르코루 등) 이 밀집해 있어, 
+ 호텔 방에서 나가지 않고도 편의점과 슈퍼만 필요한 경우에도 충분히 생활할 수 있는 인프라가 갖춰져 있습니다.
+ </p>
+ </article>
 
-            <!-- Card 3: Shopping -->
-            <article class="info-card">
-                <span class="card-icon">🛍️</span>
-                <h3>쇼핑 & 유흥</h3>
-                <p style="font-size: 0.95rem; color: #444;">
-                    여성복과 잡화류의 중심지입니다.<br>
-                    특히 <strong>'U-SITE'</strong> 같은 쇼핑몰은 층별로 다양한 브랜드를 만나볼 수 있어, 
-                    쇼핑 리스트에 '패션'이 있다면 이케부쿠로가 최적지입니다.
-                </p>
-            </article>
+ <!-- Card 3: Shopping -->
+ <article class="info-card">
+ <span class="card-icon">🛍️</span>
+ <h3>쇼핑 & 유흥</h3>
+ <p style="font-size: 0.95rem; color: #444;">
+ 여성복과 잡화류의 중심지입니다.<br>
+ 특히 <strong>'U-SITE'</strong> 같은 쇼핑몰은 층별로 다양한 브랜드를 만나볼 수 있어, 
+ 쇼핑 리스트에 '패션'이 있다면 이케부쿠로가 최적지입니다.
+ </p>
+ </article>
 
-        </div>
-    </div>
+ </div>
+ </div>
 
-    <!-- Detailed Info Break -->
-    <div class="full-width-section">
-        <h2>실질적인 체크리스트 (Practical Checklist)</h2>
-        <ul class="bullet-list">
-            <li><strong>인터넷 연결:</strong> 호텔 내부 와이파이 대신, 'Pocket Wi-Fi'를 대여하거나 미리 데이터 요금을 설정해 두면 훨씬 자유롭습니다.</li>
-            <li><strong>침구류 준비:</strong> 서부권 호텔은 침구가 간혹 얇거나 딱딱할 수 있습니다. 편한 슬리퍼나 양말은 반드시 챙기세요.</li>
-            <li><strong>주변 음식:</strong> 아침 식사 옵션이 제한적일 수 있으므로, 근처 '키친'이나 '아케바야시' 등 식당 위치를 미리 검색하세요.</li>
-        </ul>
-    </div>
+ <!-- Detailed Info Break -->
+ <div class="full-width-section">
+ <h2>실질적인 체크리스트 (Practical Checklist)</h2>
+ <ul class="bullet-list">
+ <li><strong>인터넷 연결:</strong> 호텔 내부 와이파이 대신, 'Pocket Wi-Fi'를 대여하거나 미리 데이터 요금을 설정해 두면 훨씬 자유롭습니다.</li>
+ <li><strong>침구류 준비:</strong> 서부권 호텔은 침구가 간혹 얇거나 딱딱할 수 있습니다. 편한 슬리퍼나 양말은 반드시 챙기세요.</li>
+ <li><strong>주변 음식:</strong> 아침 식사 옵션이 제한적일 수 있으므로, 근처 '키친'이나 '아케바야시' 등 식당 위치를 미리 검색하세요.</li>
+ </ul>
+ </div>
 
-    <!-- FAQ Section -->
-    <div class="grid-row">
-        <h2 style="margin-bottom: 32px;">자주 묻는 질문 (FAQ)</h2>
-        
-        <article class="info-card" style="border-color: var(--accent-color);">
-            <h4>Q1. 이케부쿠로에 호텔이 없는 지역은?</h4>
-            <p>아직은 아니지만, 구내의 일부 호텔은 리모델링을 진행 중입니다.</p>
-        </article>
+ <!-- FAQ Section -->
+ <div class="grid-row">
+ <h2 style="margin-bottom: 32px;">자주 묻는 질문 (FAQ)</h2>
+ 
+ <article class="info-card" style="border-color: var(--accent-color);">
+ <h4>Q1. 이케부쿠로에 호텔이 없는 지역은?</h4>
+ <p>아직은 아니지만, 구내의 일부 호텔은 리모델링을 진행 중입니다.</p>
+ </article>
 
-        <article class="info-card" style="border-color: var(--accent-color);">
-            <h4>Q2. 교통카드 없이도 이동 가능해?</h4>
-            <p>SUGOCA 카드를 미리 충전해 두거나, 패스포트로 결제 가능한 호텔을 선택하면 됩니다.</p>
-        </article>
+ <article class="info-card" style="border-color: var(--accent-color);">
+ <h4>Q2. 교통카드 없이도 이동 가능해?</h4>
+ <p>SUGOCA 카드를 미리 충전해 두거나, 패스포트로 결제 가능한 호텔을 선택하면 됩니다.</p>
+ </article>
 
-        <article class="info-card" style="border-color: var(--accent-color);">
-            <h4>Q3. 근처 맛집은?</h4>
-            <p>'도쿄 스타일'을 찾는다면 근처 '이케부쿠로 나카무라'를 추천합니다.</p>
-        </article>
+ <article class="info-card" style="border-color: var(--accent-color);">
+ <h4>Q3. 근처 맛집은?</h4>
+ <p>'도쿄 스타일'을 찾는다면 근처 '이케부쿠로 나카무라'를 추천합니다.</p>
+ </article>
 
-    </div>
+ </div>
 
-    <!-- Footer Note -->
-    <div class="footer-note">
-        <strong>Note:</strong> 이 정보는 작성자의 직접 경험과 객관적 자료를 바탕으로 작성되었습니다.<br>
-        실시간 교통 정보나 날씨에 따라 변동될 수 있으니 출국 전 반드시 재확인하시기 바랍니다.
-    </div>
+ <!-- Footer Note -->
+ <div class="footer-note">
+ <strong>Note:</strong> 이 정보는 작성자의 직접 경험과 객관적 자료를 바탕으로 작성되었습니다.<br>
+ 실시간 교통 정보나 날씨에 따라 변동될 수 있으니 출국 전 반드시 재확인하시기 바랍니다.
+ </div>
 
 </div>
 
