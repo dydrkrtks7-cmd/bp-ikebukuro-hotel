@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/4) · ikebukuro-hotel</title>
+  <meta name="description" content="ikebukuro-hotel에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://ikebukuro-stay-guide.node-link.shop/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-color: #ffffff;
+ --text-color: #1a1a1a;
+ --accent-color: #ff4757; /* bold edgy tone */
+ --secondary-bg: #f8f9fa;
+ --border-color: #e0e0e0;
+ --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ --container-width: 1200px;
+ --spacing-unit: 1.5rem;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+ body {
+ font-family: var(--font-main);
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ line-height: 1.6;
+ }
+
+ /* Responsive Grid System */
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+
+ @media (max-width: 768px) {
+ :root { --spacing-unit: 1rem; }
+ .container { padding: 0 1.5rem; }
+ }
+
+ /* Header & Nav */
+ header { border-bottom: 2px solid var(--text-color); margin-bottom: 4rem; }
+ 
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.5rem 0;
+ }
+
+ .logo { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; }
+ 
+ nav ul { list-style: none; display: flex; gap: 2rem; }
+ nav a { text-decoration: none; color: var(--text-color); font-weight: bold; transition: color 0.3s; }
+ nav a:hover { color: var(--accent-color); }
+
+ /* Main Content Layout */
+ .page-layout { display: flex; gap: 4rem; margin-bottom: 5rem; align-items: flex-start; }
+ 
+ @media (max-width: 768px) {
+ .page-layout { flex-direction: column; gap: 2rem; }
+ }
+
+ /* Typography */
+ h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -1px; }
+ h2 { font-size: 2rem; margin-top: 3rem; border-left: 5px solid var(--accent-color); padding-left: 1rem; }
+ p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #444; }
+
+ /* Meta Bar */
+ .meta-bar {
+ display: flex;
+ gap: 2rem;
+ border-top: 1px solid var(--border-color);
+ padding-top: 1rem;
+ margin-bottom: 3rem;
+ font-size: 0.9rem;
+ color: #666;
+ }
+
+ /* Content Cards */
+ .card { background: var(--secondary-bg); border-radius: 4px; overflow: hidden; margin-bottom: 2rem; box-shadow: 5px 5px 0 rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+ .card:hover { transform: translate(-5px, -5px); box-shadow: 8px 8px 0 rgba(0,0,0,0.2); }
+ 
+ .card-inner { padding: 2rem; position: relative; }
+ .card-tag { 
+ background: var(--text-color); color: #fff; padding: 0.25rem 0.75rem; 
+ font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; 
+ position: absolute; top: 1rem; right: 1rem;
+ }
+
+ /* List Styles */
+ .check-list { list-style: none; margin-top: 1rem; }
+ .check-list li { padding-left: 2.5rem; margin-bottom: 0.8rem; position: relative; font-weight: bold; cursor: pointer; transition: color 0.3s; }
+ .check-list li:hover { color: var(--accent-color); }
+ .check-list li::before { content: '→'; position: absolute; left: 0; top: 0; opacity: 0.5; }
+
+ /* FAQ Section */
+ .faq-item { border-bottom: 1px solid #ddd; padding: 2rem 0; }
+ .faq-question { font-weight: bold; margin-bottom: 0.5rem; cursor: pointer; display: block; color: var(--accent-color); }
+ .faq-answer { display: none; white-space: pre-wrap; }
+ 
+ /* Footer */
+ footer { border-top: 2px solid var(--text-color); padding: 3rem 0; text-align: center; font-size: 0.9rem; color: #666; margin-top: auto; }
+
+ </style>
+  <meta property="og:title" content="글 목록 (1/4) · ikebukuro-hotel">
+  <meta property="og:description" content="ikebukuro-hotel에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://ikebukuro-stay-guide.node-link.shop/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="container">
+ <div class="header-inner">
+ <a href="#" class="logo">Transparent Ledger</a>
+ <nav>
+ <ul>
+ <li><a href="#">메인</a></li>
+ <li><a href="#">블로그</a></li>
+ <li><a href="#">연락처</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 62개 · 1/4 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-10jzhtk.html">Ikebukuro 호텔 운영 현황과 폐업 원인 분석: 단골 손님과 사장 갈등, 실패 사례 및 성공 전략</a>
+        <p class="post-item__summary">아, 진짜... 홍대 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 이해하기 위해서는 단골 손님의 시점에서 사장 몰래 메뉴별 원가 계산해서 블로그에 올리는 썰을 살펴봐야 합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-002-9iveyt.html">1972 년 청문회 누락 페이지를 읽어내는 법, 아이벡스 호텔 선택 전처럼</a>
+        <p class="post-item__summary">1972 년 청문회 기록에서 페이지 번호가 연속되지 않는 구간이 3 개 발견됐다. 나는 그전까지 표준 문서로만 보고 넘겼다. 첫 번째 실패는 보고서의 물리적 두께를 믿고 숫자만 확인한 게었다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-004-d8nn2z.html">2 인용 테라포밍 마스 밸런스 붕괴와 이케부쿠로의 숨은 거래법</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-004-pqd3s4.html">아이케부쿠로 호텔 체크인 전 확인사항처럼, 글룸헤이븐 스탯 차이도 세밀하게 따져야 해</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-004-swaq88.html">박스 종이 하나 틀리면 한복 주머니 털어준대</a>
+        <p class="post-item__summary">아, 진짜... 박스만 봐도 돈이 빠져나가는 경우가 많지. 특히 SB Dunk Low 파리지앵 2003 년판과 21 년 레트로판을 거래할 때 그 차이는 미세하지만 치명적이지. 내가 이케부쿠로 호텔 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-001-3ndfnv.html">이케부쿠로 호텔 스위트룸과 파이트 클럽 극장방의 비교 분석</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-003-1kp1a9a.html">이케부쿠로 호텔 안내 vs 리들리 스콧의 연출적 실험</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-003-j0bgg.html">디렉터 버전과 파이널 컷의 차이를 이케부쿠로 호텔 예약할 때처럼 비교해야 하는 이유</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-003-q4hc8k.html">월 3 천만 원 매출로 6 개월 만에 문을 닫는 이유와 아이쿠부쿠루 호텔 안내처럼 살아남는 법</a>
+        <p class="post-item__summary">street, signboard, neon lights, tokyo, night, red, closed, shop front, 2023, urban, atmosphere</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-1wcbxmx.html">보드게임 카페 사장 시점, 클래스 카드의 진실</a>
+        <p class="post-item__summary">이케부쿠로는 도쿄 도심 북서쪽에 위치한 대표적인 철도 환승 거점으로, 여러 노선이 교차하는 만큼 숙소 선택의 폭도 넓은 지역이다. 역을 중심으로 백화점과 상업 시설이 밀집해 있어 짧은 일정으로 이동</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-zmi0k4.html">Ikebukuro hotel 안내</a>
+        <p class="post-item__summary">이케부쿠로는 도쿄 내에서도 교통과 쇼핑 그리고 문화 활동이 매우 편리한 중심지 중 하나입니다. 이곳을 방문하는 여행객들이 숙소를 선택할 때 고려해야 할 다양한 호텔 정보와 지역적 특성을 안내해 드립</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-1myiiac.html">KOTRA 관 tower 건물에 которым 속도 lorry 승강기 4층</a>
+        <p class="post-item__summary">Ikebukuro 역 출구를 직행하면 손으로 만질 수 있을 만큼 가깝다. 호텔을 예약할 때마다 '역근' 여부를 중시회장다면 KOTRA 관 tower 바로 밑에 위치한 어느 숙소가 있다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-005.html">이케부쿠로 숙소 유형, 무엇이 다를까</a>
+        <p class="post-item__summary">이케부쿠로는 도쿄 북서부의 대형 환승역을 중심으로 다양한 형태의 숙소가 모여 있는 지역이다. 같은 지역이라도 숙소 유형에 따라 가격대와 이용 방식이 크게 달라지므로, 예약 전 유형별 차이를 먼저 파</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-006.html">여행 목적에 따라 달라지는 이케부쿠로 숙소 선택</a>
+        <p class="post-item__summary">이케부쿠로를 찾는 이유는 출장, 관광, 경유 등 저마다 다르다. 방문 목적에 따라 우선순위로 두어야 할 조건이 달라지므로, 목적별로 무엇을 먼저 확인하면 좋은지 정리했다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-007.html">Ikebukuro 호텔 안내</a>
+        <p class="post-item__summary">Ikebukuro는 도쿄 내에서도 교통 접근성이 뛰어난 지역에서, 호텔 예약을 고려하는 사람들에게 꾸준히 관심 받는 지역 중 하나입니다. 이 지역을 찾아보는 이유는 다양한 숙박 옵션이 존재하기 때문</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-008.html">이케부쿠로 숙소 예약 전 확인 절차</a>
+        <p class="post-item__summary">숙소 예약은 몇 가지 단계를 순서대로 짚어보면 실수를 줄일 수 있다. 이 페이지는 이케부쿠로 지역 숙소를 예약하기 전 확인하면 좋은 절차를 단계별로 정리했다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-102.html">마포 홍대 로컬 럭셔리 밤문화 가이드</a>
+        <p class="post-item__summary">이케부쿠로 지역 숙소를 처음 알아보는 사람들이 공통으로 묻는 질문을 모아 정리했다. 개별 숙소를 비교하기 전에 아래 내용을 먼저 확인해두면 도움이 된다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-130.html">마포 셔츠룸 리얼 후기 소셜 마케팅 가이드</a>
+        <p class="post-item__summary">숙소를 예약하다 보면 낯선 용어 때문에 조건을 잘못 이해하는 경우가 있다. 이 페이지는 이케부쿠로 지역 숙소 예약 시 자주 나오는 용어를 정리하고, 실제로 자주 발생하는 실수 사례를 함께 소개한다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-157.html">마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">이케부쿠로는 여러 철도 노선이 교차하는 교통 요지로, 숙소 선택지도 유형별로 폭넓게 갖춰져 있다. 이 글은 이케부쿠로 지역 호텔을 유형에 따라 나누어 비교할 수 있도록 정리한 안내 자료다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-182.html">마포 단체 회식용 대형 룸 노래방 가격 정보</a>
+        <p class="post-item__summary">같은 이케부쿠로라도 출장, 가족 여행, 장기 체류 등 방문 목적에 따라 적합한 숙소 조건이 달라진다. 아래 내용은 목적별로 확인하면 좋은 항목을 정리한 자료다.</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+      <a class="pager__link" href="posts-4.html">4</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

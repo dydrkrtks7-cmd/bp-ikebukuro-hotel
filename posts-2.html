@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/4) · ikebukuro-hotel</title>
+  <meta name="description" content="ikebukuro-hotel에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://ikebukuro-stay-guide.node-link.shop/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-color: #ffffff;
+ --text-color: #1a1a1a;
+ --accent-color: #ff4757; /* bold edgy tone */
+ --secondary-bg: #f8f9fa;
+ --border-color: #e0e0e0;
+ --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ --container-width: 1200px;
+ --spacing-unit: 1.5rem;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+ body {
+ font-family: var(--font-main);
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ line-height: 1.6;
+ }
+
+ /* Responsive Grid System */
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+
+ @media (max-width: 768px) {
+ :root { --spacing-unit: 1rem; }
+ .container { padding: 0 1.5rem; }
+ }
+
+ /* Header & Nav */
+ header { border-bottom: 2px solid var(--text-color); margin-bottom: 4rem; }
+ 
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.5rem 0;
+ }
+
+ .logo { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; }
+ 
+ nav ul { list-style: none; display: flex; gap: 2rem; }
+ nav a { text-decoration: none; color: var(--text-color); font-weight: bold; transition: color 0.3s; }
+ nav a:hover { color: var(--accent-color); }
+
+ /* Main Content Layout */
+ .page-layout { display: flex; gap: 4rem; margin-bottom: 5rem; align-items: flex-start; }
+ 
+ @media (max-width: 768px) {
+ .page-layout { flex-direction: column; gap: 2rem; }
+ }
+
+ /* Typography */
+ h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -1px; }
+ h2 { font-size: 2rem; margin-top: 3rem; border-left: 5px solid var(--accent-color); padding-left: 1rem; }
+ p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #444; }
+
+ /* Meta Bar */
+ .meta-bar {
+ display: flex;
+ gap: 2rem;
+ border-top: 1px solid var(--border-color);
+ padding-top: 1rem;
+ margin-bottom: 3rem;
+ font-size: 0.9rem;
+ color: #666;
+ }
+
+ /* Content Cards */
+ .card { background: var(--secondary-bg); border-radius: 4px; overflow: hidden; margin-bottom: 2rem; box-shadow: 5px 5px 0 rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+ .card:hover { transform: translate(-5px, -5px); box-shadow: 8px 8px 0 rgba(0,0,0,0.2); }
+ 
+ .card-inner { padding: 2rem; position: relative; }
+ .card-tag { 
+ background: var(--text-color); color: #fff; padding: 0.25rem 0.75rem; 
+ font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; 
+ position: absolute; top: 1rem; right: 1rem;
+ }
+
+ /* List Styles */
+ .check-list { list-style: none; margin-top: 1rem; }
+ .check-list li { padding-left: 2.5rem; margin-bottom: 0.8rem; position: relative; font-weight: bold; cursor: pointer; transition: color 0.3s; }
+ .check-list li:hover { color: var(--accent-color); }
+ .check-list li::before { content: '→'; position: absolute; left: 0; top: 0; opacity: 0.5; }
+
+ /* FAQ Section */
+ .faq-item { border-bottom: 1px solid #ddd; padding: 2rem 0; }
+ .faq-question { font-weight: bold; margin-bottom: 0.5rem; cursor: pointer; display: block; color: var(--accent-color); }
+ .faq-answer { display: none; white-space: pre-wrap; }
+ 
+ /* Footer */
+ footer { border-top: 2px solid var(--text-color); padding: 3rem 0; text-align: center; font-size: 0.9rem; color: #666; margin-top: auto; }
+
+ </style>
+  <meta property="og:title" content="글 목록 (2/4) · ikebukuro-hotel">
+  <meta property="og:description" content="ikebukuro-hotel에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://ikebukuro-stay-guide.node-link.shop/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="container">
+ <div class="header-inner">
+ <a href="#" class="logo">Transparent Ledger</a>
+ <nav>
+ <ul>
+ <li><a href="#">메인</a></li>
+ <li><a href="#">블로그</a></li>
+ <li><a href="#">연락처</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 62개 · 2/4 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0107.html">Ikebukuro hotel 안내가 시사하는 마포 럭셔리 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">성공적인 단체 모임을 기획할 때는 공간의 크기, 위치의 편의성, 음향 시설의 상태 등 여러 충족 조건을 따져봐야 합니다. 흔히 해외 여행객들이 Ikebukuro hotel 안내 정보를 세심하게 살피</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0108.html">Ikebukuro hotel 안내로 보는 마르지 않는 1급수 백링크 주스 공급 서비스</a>
+        <p class="post-item__summary">여러분은 자신의 온라인 콘텐츠가 충분한 주목을 받고 있다고 자신할 수 있습니까. 마치 여행을 떠나기 전 Ikebukuro hotel 안내 정보를 찾아보며 숙소의 질을 따지듯, 디지털 환경에서도 정보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0109.html">Ikebukuro hotel 안내를 통해 본 구글 틈새 키워드 트래픽 외환 거래 전략</a>
+        <p class="post-item__summary">해외 여행 시 Ikebukuro hotel 안내 정보를 찾는 것처럼, 투자 분야에서도 정확한 데이터를 선별하는 과정이 중요합니다. 온라인상의 방대한 정보를 걸러내고 유효한 흐름을 읽는 것은 성공적인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0110.html">Ikebukuro hotel 안내로 배우는 도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드</a>
+        <p class="post-item__summary">Ikebukuro hotel 안내 정보를 탐색하는 사용자가 많아질수록 해당 웹페이지의 신뢰도가 상승하는 원리는 도메인 지수 관리와 유사합니다. 웹사이트의 권위를 높이는 과정은 마치 두피 건강을 위해</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0111.html">Ikebukuro hotel 안내와 비교하는 마포/합정 인디 소셜 라운지 가이드의 핵심</a>
+        <p class="post-item__summary">Ikebukuro hotel 안내 정보를 찾듯 우리도 특별한 공간을 찾을 때 기대감을 품게 됩니다. 마포와 합정 일대의 소셜 라운지는 독특한 인디 감성으로 많은 이들의 관심을 끌지만, 방문 전 주의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0112.html">Ikebukuro hotel 안내가 알려주는 합정 셔츠룸 단골들이 뽑은 핫플 매거진</a>
+        <p class="post-item__summary">익숙하지 않은 지역에서 Ikebukuro hotel 안내 정보를 찾는 심정과 합정 지역의 숨은 핫플레이스를 탐색하는 것은 매우 비슷합니다. 단골들의 입소문이 담긴 매거진을 참고하면 실패 없는 방문이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0113.html">Ikebukuro hotel 안내 셔츠룸 예약 이용 가이드</a>
+        <p class="post-item__summary">도쿄의 번화가인 이케부쿠로를 방문할 때 가장 먼저 고민하게 되는 것이 숙소입니다. 낯선 환경에서 길을 찾느라 시간을 허비하는 여행객들이 많은데, Ikebukuro hotel 안내 정보를 미리 숙지하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0114.html">Ikebukuro hotel 안내와 셔츠룸 사이트 활용법</a>
+        <p class="post-item__summary">흔히 많은 여행객이 유흥 문화는 무조건 밤늦은 시간에만 활발하다고 오해하곤 합니다. 하지만 실제로 효율적인 방문을 원한다면 시간대 선택에 따라 서비스의 질과 분위기가 크게 달라질 수 있습니다. Ik</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0115.html">Ikebukuro hotel 안내와 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">디지털 환경에서의 정보 도달 효율을 높이기 위해서는 서버의 안정성과 네트워크 대역폭 확보가 무엇보다 중요합니다. 특히 많은 데이터를 다루는 웹사이트 운영자라면 안정적인 연결망 구축이 필수적입니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0116.html">Ikebukuro hotel 안내와 구글 신뢰 지수 모발이식 솔루션 관계</a>
+        <p class="post-item__summary">귀하의 비즈니스가 디지털 공간에서 얼마나 견고한 입지를 다지고 있다고 생각하시나요? 브랜드의 신뢰 지수는 단순히 홍보글을 많이 쓴다고 올라가는 것이 아닙니다. Ikebukuro hotel 안내와 같</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0287.html">Ikebukuro hotel 안내를 통해 본 공덕 셔츠룸 추천정보 실패 지점</a>
+        <p class="post-item__summary">해외 여행 시 Ikebukuro hotel 안내를 꼼꼼히 살피는 여행객처럼, 국내 유흥업소를 이용할 때도 철저한 사전 조사가 필요하다. 하지만 많은 이들이 공덕 지역의 셔츠룸을 찾을 때 사소한 실수</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0288.html">Ikebukuro hotel 안내와 연남 유흥 추천정보의 위치 체크리스트</a>
+        <p class="post-item__summary">숙소를 고를 때 Ikebukuro hotel 안내를 보며 역과의 거리와 주변 편의시설을 확인하듯이, 연남 지역의 유흥 시설을 방문할 때도 위치적 접근성은 매우 중요한 요소다. 방문 전 반드시 체크해</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0289.html">Ikebukuro hotel 안내 및 마곡 가라오케 추천정보 활용 가이드</a>
+        <p class="post-item__summary">낯선 도시에 도착해 숙소를 찾는 일은 늘 긴장감을 동반합니다. 마치 해외 여행객이 Ikebukuro hotel 안내 문구를 따라 헤매다 비로소 로비에 들어섰을 때의 안도감과 비슷합니다. 익숙하지 않</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0290.html">Ikebukuro hotel 안내 정보와 마곡 유흥 추천정보의 진실</a>
+        <p class="post-item__summary">많은 이들이 유흥 시설은 무조건 밤늦은 시간에 방문해야 좋다고 생각합니다. 그러나 이는 사실과 거리가 먼 오해일 수 있습니다. 마치 Ikebukuro hotel 안내 문구가 체크인 시간을 엄격히 명</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0291.html">Ikebukuro hotel 안내 및 합정 노래방 추천정보의 핵심 기준</a>
+        <p class="post-item__summary">쾌적한 환경, 최신 음향 기기, 접근성 좋은 위치라는 세 가지 조건을 모두 만족하는 장소를 찾는 것은 쉽지 않습니다. 이는 일본 여행 중 Ikebukuro hotel 안내 지도를 보며 최적의 숙소를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0292.html">Ikebukuro hotel 안내와 연남 클럽 추천정보의 비교 기준</a>
+        <p class="post-item__summary">여러분은 평소 주말 밤을 어디서 보낼지 고민하며 스마트폰 화면을 스크롤한 적이 있으신가요? 낯선 곳에서 Ikebukuro hotel 안내 게시물을 보며 나의 휴식을 책임질 곳을 찾는 심정과 지금 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0293.html">Ikebukuro hotel 안내 및 합정 셔츠룸 추천정보 살펴보기</a>
+        <p class="post-item__summary">해외 여행 시 Ikebukuro hotel 안내 정보를 확인하는 것만큼이나 국내 유흥 시설을 찾는 과정도 신중해야 합니다. 특히 합정 지역에서 공간을 찾을 때는 체계적인 단계별 접근이 필요합니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0294.html">Ikebukuro hotel 안내와 공덕 가라오케 추천정보 분석</a>
+        <p class="post-item__summary">숙박을 위해 Ikebukuro hotel 안내 자료를 찾아보는 것처럼, 저녁 시간을 알차게 보내기 위한 공간 선택도 중요합니다. 공덕 가라오케를 고민할 때는 크게 두 가지 선택지를 두고 비교하게 됩</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0295.html">Ikebukuro hotel 안내를 통한 상수 마사지 추천정보 활용</a>
+        <p class="post-item__summary">해외 Ikebukuro hotel 안내 정보를 찾듯 상수 지역에서 휴식을 취할 곳을 찾을 때도 많은 이들이 실수를 반복합니다. 특히 제대로 알아보지 않고 방문했다가 낭패를 보는 경우가 많습니다. 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0296.html">Ikebukuro hotel 안내와 망원 노래방 추천정보 및 체크리스트</a>
+        <p class="post-item__summary">여행객이 Ikebukuro hotel 안내 자료를 보며 위치를 고르듯, 망원 노래방을 찾을 때도 접근성은 선택의 핵심입니다. 골목에 숨어있는 명소도 좋지만, 처음 방문하는 사람이라면 대중교통과의 거</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+      <a class="pager__link" href="posts-3.html">3</a>
+      <a class="pager__link" href="posts-4.html">4</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
